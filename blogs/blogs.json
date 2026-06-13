@@ -1,0 +1,41 @@
+{
+  "provider": "uniprot",
+  "blogs": [
+    {
+      "title": "UniProt 2024: novel sequence representations, customised downloads, and new homology annotations",
+      "url": "https://academic.oup.com/nar/article/52/D1/D609/7486488",
+      "date": "2024-01-05",
+      "source": "Nucleic Acids Research",
+      "description": "Annual update describing new features in UniProt 2024 including novel sequence representations, customised downloads, and new homology annotations."
+    },
+    {
+      "title": "UniProt REST API: Programmatic Access to Protein Data",
+      "url": "https://www.uniprot.org/help/api",
+      "date": "2023-01-01",
+      "source": "UniProt Help",
+      "description": "Official documentation for programmatic access to UniProt data via the REST API at rest.uniprot.org, covering search, retrieval, streaming, and ID mapping."
+    },
+    {
+      "title": "The UniProt Knowledgebase in 2023: customized dashboards and API endpoints",
+      "url": "https://academic.oup.com/nar/article/51/D1/D523/6835370",
+      "date": "2023-01-06",
+      "source": "Nucleic Acids Research",
+      "description": "Annual update on the UniProt Knowledgebase covering new customized dashboards, API endpoints, and data improvements."
+    },
+    {
+      "title": "ID Mapping: Convert Identifiers Between Databases",
+      "url": "https://www.uniprot.org/help/id_mapping",
+      "date": "2022-06-01",
+      "source": "UniProt Help",
+      "description": "Documentation for the UniProt ID Mapping service, which supports asynchronous bulk conversion of identifiers across 150+ databases including RefSeq, Ensembl, PDB, ChEMBL, KEGG, and OMIM."
+    },
+    {
+      "title": "UniProt SPARQL Endpoint: Querying the Protein Universe as a Knowledge Graph",
+      "url": "https://sparql.uniprot.org/",
+      "date": "2022-01-01",
+      "source": "UniProt SPARQL",
+      "description": "Overview of the UniProt SPARQL 1.1 endpoint, powered by QLever, exposing approximately 232 billion RDF triples across 21 named graphs for complex biological queries."
+    }
+  ],
+  "last_fetched": "2026-06-13"
+}

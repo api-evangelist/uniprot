@@ -1,0 +1,102 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "api": "https://schema.org/WebAPI",
+    "hydra": "http://www.w3.org/ns/hydra/core#"
+  },
+  "@type": "Organization",
+  "@id": "https://www.uniprot.org/",
+  "name": "UniProt Consortium",
+  "description": "UniProt is the world's leading high-quality, comprehensive, and freely accessible resource for protein sequence and functional annotation data. Maintained by the UniProt Consortium (EMBL-EBI, SIB, and PIR).",
+  "url": "https://www.uniprot.org/",
+  "logo": "https://www.uniprot.org/images/logos/uniprot.svg",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "help@uniprot.org",
+    "url": "https://www.uniprot.org/contact"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "UniProt APIs",
+    "itemListElement": [
+      {
+        "@type": "WebAPI",
+        "@id": "https://rest.uniprot.org/uniprotkb",
+        "name": "UniProtKB REST API",
+        "description": "Search and retrieve protein entries from UniProtKB, which integrates Swiss-Prot (manually reviewed) and TrEMBL (computationally annotated) databases. Supports full-text and field-specific queries, retrieval by accession, and streaming of large result sets.",
+        "url": "https://rest.uniprot.org/uniprotkb",
+        "documentation": "https://www.uniprot.org/help/api",
+        "version": "2026_01",
+        "termsOfService": "https://www.uniprot.org/help/license",
+        "keywords": ["proteins", "sequences", "annotations", "Swiss-Prot", "TrEMBL", "bioinformatics"]
+      },
+      {
+        "@type": "WebAPI",
+        "@id": "https://rest.uniprot.org/uniref",
+        "name": "UniRef REST API",
+        "description": "UniRef (UniProt Reference Clusters) groups similar sequences to reduce redundancy. UniRef100 combines identical sequences; UniRef90 clusters sequences sharing 90% identity; UniRef50 clusters at 50%.",
+        "url": "https://rest.uniprot.org/uniref",
+        "documentation": "https://www.uniprot.org/help/uniref",
+        "version": "2026_01",
+        "termsOfService": "https://www.uniprot.org/help/license",
+        "keywords": ["proteins", "sequence clusters", "redundancy reduction", "bioinformatics"]
+      },
+      {
+        "@type": "WebAPI",
+        "@id": "https://rest.uniprot.org/uniparc",
+        "name": "UniParc REST API",
+        "description": "UniParc (UniProt Archive) is a comprehensive non-redundant database of publicly available protein sequences. Each unique sequence appears once with a stable UniParc identifier and cross-references to source databases.",
+        "url": "https://rest.uniprot.org/uniparc",
+        "documentation": "https://www.uniprot.org/help/uniparc",
+        "version": "2026_01",
+        "termsOfService": "https://www.uniprot.org/help/license",
+        "keywords": ["proteins", "sequences", "archive", "bioinformatics"]
+      },
+      {
+        "@type": "WebAPI",
+        "@id": "https://rest.uniprot.org/proteomes",
+        "name": "Proteomes REST API",
+        "description": "Provides access to UniProt proteomes — the complete or near-complete sets of proteins from fully sequenced organisms. Supports retrieval of reference proteomes and gene-centric proteome data.",
+        "url": "https://rest.uniprot.org/proteomes",
+        "documentation": "https://www.uniprot.org/help/proteomes",
+        "version": "2026_01",
+        "termsOfService": "https://www.uniprot.org/help/license",
+        "keywords": ["proteomes", "genomics", "comparative biology", "bioinformatics"]
+      },
+      {
+        "@type": "WebAPI",
+        "@id": "https://rest.uniprot.org/idmapping",
+        "name": "ID Mapping REST API",
+        "description": "Maps identifiers between UniProt accessions and over 150 external database identifiers (e.g., RefSeq, Ensembl, PDB, ChEMBL, KEGG, OMIM). Asynchronous job-based service supporting bulk conversion of thousands of identifiers.",
+        "url": "https://rest.uniprot.org/idmapping",
+        "documentation": "https://www.uniprot.org/help/id_mapping",
+        "version": "2026_01",
+        "termsOfService": "https://www.uniprot.org/help/license",
+        "keywords": ["ID mapping", "cross-references", "identifiers", "bioinformatics"]
+      },
+      {
+        "@type": "WebAPI",
+        "@id": "https://sparql.uniprot.org/sparql",
+        "name": "UniProt SPARQL Endpoint",
+        "description": "A standards-compliant SPARQL 1.1 endpoint exposing the full UniProt knowledge graph as RDF. Contains approximately 232 billion triples across 21 named graphs.",
+        "url": "https://sparql.uniprot.org/sparql",
+        "documentation": "https://sparql.uniprot.org/",
+        "version": "2026_01",
+        "termsOfService": "https://www.uniprot.org/help/license",
+        "keywords": ["SPARQL", "RDF", "semantic web", "knowledge graph", "bioinformatics"]
+      },
+      {
+        "@type": "WebAPI",
+        "@id": "https://www.ebi.ac.uk/proteins/api",
+        "name": "EBI Proteins REST API",
+        "description": "The EMBL-EBI Proteins API provides integrated access to UniProt protein annotations alongside large-scale study data including variation data from 1000 Genomes, ClinVar, ExAC, COSMIC, gnomAD, and TCGA; proteomics evidence; antigen and epitope annotations; and coordinate mappings.",
+        "url": "https://www.ebi.ac.uk/proteins/api",
+        "documentation": "https://www.ebi.ac.uk/proteins/api/doc/",
+        "version": "1",
+        "termsOfService": "https://www.ebi.ac.uk/about/terms-of-use",
+        "keywords": ["proteins", "variation", "proteomics", "bioinformatics"]
+      }
+    ]
+  }
+}
