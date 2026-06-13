@@ -1,0 +1,22 @@
+name: Free
+description: >
+  UniProt provides free and open access to all its data and APIs. There are no
+  subscription tiers or paywalls. All protein sequence and annotation data is
+  available at no cost under the Creative Commons Attribution 4.0 International
+  (CC BY 4.0) license.
+url: https://www.uniprot.org/help/license
+price: 0
+currency: USD
+features:
+  - Full access to UniProtKB (Swiss-Prot + TrEMBL) via REST API
+  - Full access to UniRef, UniParc, and Proteomes endpoints
+  - ID mapping service
+  - SPARQL endpoint with 232+ billion triples
+  - Bulk download via FTP
+  - No API key required
+  - No registration required
+rateLimits:
+  - type: requests
+    limit: 200
+    period: second
+    notes: 200 requests per second per user on the EBI Proteins API

@@ -1,0 +1,28 @@
+name: Default Rate Limits
+description: >
+  UniProt REST API (rest.uniprot.org) does not publicly document a hard rate
+  limit but asks users to be considerate and use pagination or streaming for
+  large result sets. The EBI Proteins API (www.ebi.ac.uk/proteins/api) enforces
+  a limit of 200 requests per second per user. The SPARQL endpoint imposes a
+  45-minute query timeout. No authentication is required for any endpoint.
+limits:
+  - service: EBI Proteins API
+    endpoint: https://www.ebi.ac.uk/proteins/api
+    requests: 200
+    period: second
+    scope: per user
+  - service: UniProt SPARQL
+    endpoint: https://sparql.uniprot.org/sparql
+    queryTimeout: 45
+    timeoutUnit: minutes
+  - service: UniProt REST API
+    endpoint: https://rest.uniprot.org
+    notes: >
+      No hard limit published. Recommended to use streaming (size=-1) or
+      pagination for large downloads. Cursor-based pagination via Link header
+      for sequential page traversal.
+bestPractices:
+  - Use the size and cursor parameters for paginated retrieval
+  - Prefer streaming (size=-1 with Accept: application/json) for bulk downloads
+  - Use compressed responses where possible (gzip)
+  - Cache results locally when re-querying the same accessions

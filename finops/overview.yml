@@ -1,0 +1,23 @@
+name: Financial Overview
+description: >
+  UniProt is a free, publicly funded resource. There are no costs associated
+  with API usage. UniProt is maintained by a consortium of three organizations:
+  the European Bioinformatics Institute (EMBL-EBI), the Swiss Institute of
+  Bioinformatics (SIB), and the Protein Information Resource (PIR). Funding
+  comes from public research grants (NIH, EU Horizon, and member state sources).
+cost: 0
+currency: USD
+funding:
+  - organization: EMBL-EBI
+    url: https://www.ebi.ac.uk/
+  - organization: Swiss Institute of Bioinformatics (SIB)
+    url: https://www.sib.swiss/
+  - organization: Protein Information Resource (PIR)
+    url: https://proteininformationresource.org/
+license:
+  name: Creative Commons Attribution 4.0 International (CC BY 4.0)
+  url: https://creativecommons.org/licenses/by/4.0/
+notes: >
+  All UniProt data is freely available without any access fees. Commercial use
+  is permitted under the CC BY 4.0 license with attribution. There are no
+  premium tiers, enterprise contracts, or paid API plans.

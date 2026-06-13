@@ -1,0 +1,208 @@
+name: UniProt
+description: >
+  UniProt is the world's leading high-quality, comprehensive, and freely
+  accessible resource for protein sequence and functional annotation data.
+  Maintained by the UniProt Consortium (EMBL-EBI, SIB, and PIR), it integrates
+  information from experimental literature and computational analysis to provide
+  a single authoritative source on protein function, taxonomy, sequences,
+  cross-references, and disease associations. UniProt exposes a REST API at
+  rest.uniprot.org for searching and retrieving entries from UniProtKB,
+  UniRef, UniParc, Proteomes, and supporting services such as ID mapping.
+  All data is freely available under Creative Commons Attribution 4.0.
+image: https://www.uniprot.org/images/logos/uniprot.svg
+url: https://www.uniprot.org/
+tags:
+  - Proteins
+  - Bioinformatics
+  - Genomics
+  - Life Sciences
+  - Open Data
+created: "2002-01-01"
+modified: "2026-06-13"
+specificationVersion: "0.19"
+apis:
+
+  - name: UniProtKB REST API
+    description: >
+      Search and retrieve protein entries from UniProtKB, which integrates
+      Swiss-Prot (manually reviewed) and TrEMBL (computationally annotated)
+      databases. Supports full-text and field-specific queries, retrieval by
+      accession, and streaming of large result sets. Returns rich protein
+      records including sequences, functional annotations, cross-references,
+      taxonomic lineage, subcellular location, disease associations, and
+      literature citations.
+    image: https://www.uniprot.org/images/logos/uniprot.svg
+    humanURL: https://www.uniprot.org/help/api
+    baseURL: https://rest.uniprot.org/uniprotkb
+    version: "2026_01"
+    tags:
+      - Proteins
+      - Sequences
+      - Annotations
+      - Swiss-Prot
+      - TrEMBL
+    properties:
+      - type: Documentation
+        url: https://www.uniprot.org/help/api
+      - type: OpenAPI
+        url: https://www.uniprot.org/help/api
+      - type: TermsOfService
+        url: https://www.uniprot.org/help/license
+    contact:
+      - FN: UniProt Consortium
+        email: help@uniprot.org
+        url: https://www.uniprot.org/contact
+
+  - name: UniRef REST API
+    description: >
+      UniRef (UniProt Reference Clusters) groups similar sequences to reduce
+      redundancy. UniRef100 combines identical sequences; UniRef90 clusters
+      sequences sharing 90% identity; UniRef50 clusters at 50%. The REST API
+      allows searching and retrieving clusters with associated member lists.
+    image: https://www.uniprot.org/images/logos/uniprot.svg
+    humanURL: https://www.uniprot.org/help/uniref
+    baseURL: https://rest.uniprot.org/uniref
+    version: "2026_01"
+    tags:
+      - Proteins
+      - Sequence Clusters
+      - Redundancy Reduction
+    properties:
+      - type: Documentation
+        url: https://www.uniprot.org/help/uniref
+      - type: TermsOfService
+        url: https://www.uniprot.org/help/license
+    contact:
+      - FN: UniProt Consortium
+        email: help@uniprot.org
+        url: https://www.uniprot.org/contact
+
+  - name: UniParc REST API
+    description: >
+      UniParc (UniProt Archive) is a comprehensive non-redundant database of
+      publicly available protein sequences. Each unique sequence appears once
+      with a stable UniParc identifier and cross-references to source databases.
+      The REST API enables retrieval of sequence entries by accession or
+      database cross-reference.
+    image: https://www.uniprot.org/images/logos/uniprot.svg
+    humanURL: https://www.uniprot.org/help/uniparc
+    baseURL: https://rest.uniprot.org/uniparc
+    version: "2026_01"
+    tags:
+      - Proteins
+      - Sequences
+      - Archive
+    properties:
+      - type: Documentation
+        url: https://www.uniprot.org/help/uniparc
+      - type: TermsOfService
+        url: https://www.uniprot.org/help/license
+    contact:
+      - FN: UniProt Consortium
+        email: help@uniprot.org
+        url: https://www.uniprot.org/contact
+
+  - name: Proteomes REST API
+    description: >
+      Provides access to UniProt proteomes — the complete or near-complete sets
+      of proteins from fully sequenced organisms. Supports retrieval of
+      reference proteomes and gene-centric proteome data. Useful for whole-
+      organism proteomics and comparative genomics workflows.
+    image: https://www.uniprot.org/images/logos/uniprot.svg
+    humanURL: https://www.uniprot.org/help/proteomes
+    baseURL: https://rest.uniprot.org/proteomes
+    version: "2026_01"
+    tags:
+      - Proteomes
+      - Genomics
+      - Comparative Biology
+    properties:
+      - type: Documentation
+        url: https://www.uniprot.org/help/proteomes
+      - type: TermsOfService
+        url: https://www.uniprot.org/help/license
+    contact:
+      - FN: UniProt Consortium
+        email: help@uniprot.org
+        url: https://www.uniprot.org/contact
+
+  - name: ID Mapping REST API
+    description: >
+      Maps identifiers between UniProt accessions and over 150 external
+      database identifiers (e.g., RefSeq, Ensembl, PDB, ChEMBL, KEGG, OMIM).
+      Asynchronous job-based service: submit a mapping job, poll for completion,
+      then fetch paginated results. Supports bulk conversion of thousands of
+      identifiers in a single request.
+    image: https://www.uniprot.org/images/logos/uniprot.svg
+    humanURL: https://www.uniprot.org/help/id_mapping
+    baseURL: https://rest.uniprot.org/idmapping
+    version: "2026_01"
+    tags:
+      - ID Mapping
+      - Cross-references
+      - Identifiers
+    properties:
+      - type: Documentation
+        url: https://www.uniprot.org/help/id_mapping
+      - type: TermsOfService
+        url: https://www.uniprot.org/help/license
+    contact:
+      - FN: UniProt Consortium
+        email: help@uniprot.org
+        url: https://www.uniprot.org/contact
+
+  - name: UniProt SPARQL Endpoint
+    description: >
+      A standards-compliant SPARQL 1.1 endpoint exposing the full UniProt
+      knowledge graph as RDF. The current release contains approximately 232
+      billion triples across 21 named graphs. Supports complex biological
+      queries joining protein sequences, annotations, taxonomy, pathways, and
+      cross-references. Powered by QLever. Query timeout is 45 minutes.
+    image: https://www.uniprot.org/images/logos/uniprot.svg
+    humanURL: https://sparql.uniprot.org/
+    baseURL: https://sparql.uniprot.org/sparql
+    version: "2026_01"
+    tags:
+      - SPARQL
+      - RDF
+      - Semantic Web
+      - Knowledge Graph
+    properties:
+      - type: Documentation
+        url: https://sparql.uniprot.org/
+      - type: TermsOfService
+        url: https://www.uniprot.org/help/license
+    contact:
+      - FN: UniProt Consortium
+        email: help@uniprot.org
+        url: https://www.uniprot.org/contact
+
+  - name: EBI Proteins REST API
+    description: >
+      The EMBL-EBI Proteins API provides integrated access to UniProt protein
+      annotations alongside large-scale study data including variation data from
+      1000 Genomes, ClinVar, ExAC, COSMIC, gnomAD, and TCGA; proteomics
+      evidence from PeptideAtlas and MaxQB; antigen and epitope annotations;
+      and coordinate mappings. Rate-limited to 200 requests per second per user.
+    image: https://www.uniprot.org/images/logos/uniprot.svg
+    humanURL: https://www.ebi.ac.uk/proteins/api/doc/
+    baseURL: https://www.ebi.ac.uk/proteins/api
+    version: "1"
+    tags:
+      - Proteins
+      - Variation
+      - Proteomics
+      - Bioinformatics
+    properties:
+      - type: Documentation
+        url: https://www.ebi.ac.uk/proteins/api/doc/
+      - type: TermsOfService
+        url: https://www.ebi.ac.uk/about/terms-of-use
+    contact:
+      - FN: EMBL-EBI Support
+        url: https://www.ebi.ac.uk/about/contact
+
+maintainers:
+  - FN: UniProt Consortium
+    email: help@uniprot.org
+    url: https://www.uniprot.org/contact
