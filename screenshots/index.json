@@ -1,0 +1,10 @@
+[
+  {
+    "repo": "uniprot",
+    "captured_at": "2026-06-20T200029",
+    "source_url": "https://www.uniprot.org",
+    "source_type": "fallback-api",
+    "file": "uniprot-2026-06-20T200029.png",
+    "bytes": 264561
+  }
+]
