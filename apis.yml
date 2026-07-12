@@ -206,3 +206,6 @@ maintainers:
   - FN: UniProt Consortium
     email: help@uniprot.org
     url: https://www.uniprot.org/contact
+common:
+- type: DomainSecurity
+  url: security/uniprot-domain-security.yml
