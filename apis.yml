@@ -30,7 +30,7 @@ tags:
   - Open Data
 created: "2002-01-01"
 modified: "2026-06-13"
-specificationVersion: "0.19"
+specificationVersion: '0.23'
 apis:
 
   - name: UniProtKB REST API
