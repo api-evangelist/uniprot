@@ -9,6 +9,17 @@ description: >
   rest.uniprot.org for searching and retrieving entries from UniProtKB,
   UniRef, UniParc, Proteomes, and supporting services such as ID mapping.
   All data is freely available under Creative Commons Attribution 4.0.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
