@@ -57,6 +57,12 @@ apis:
   tags:
   - Proteins
   - Sequences
+  - Annotation
+  - Swiss-Prot
+  - TrEMBL
+  tags_raw:
+  - Proteins
+  - Sequences
   - Annotations
   - Swiss-Prot
   - TrEMBL
@@ -105,6 +111,10 @@ apis:
   baseURL: https://rest.uniprot.org/uniparc
   version: '2026_01'
   tags:
+  - Proteins
+  - Sequences
+  - Archives
+  tags_raw:
   - Proteins
   - Sequences
   - Archive
