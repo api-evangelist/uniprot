@@ -39,7 +39,7 @@ tags:
 - Life Sciences
 - Open Data
 created: '2002-01-01'
-modified: '2026-09-16'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - name: UniProtKB REST API
@@ -228,6 +228,8 @@ maintainers:
   email: help@uniprot.org
   url: https://www.uniprot.org/contact
 common:
+- url: https://www.uniprot.org/blog/
+  type: Blog
 - type: Website
   url: https://uniprot.org
 - type: DomainSecurity
