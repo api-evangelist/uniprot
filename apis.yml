@@ -228,6 +228,12 @@ maintainers:
   email: help@uniprot.org
   url: https://www.uniprot.org/contact
 common:
+- type: Plans
+  url: plans/free.yml
+- type: RateLimits
+  url: rate-limits/default.yml
+- type: FinOps
+  url: finops/overview.yml
 - url: https://www.uniprot.org/blog/
   type: Blog
 - type: Website
