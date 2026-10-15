@@ -1,0 +1,84 @@
+edges:
+- partner_name: identifiers.org registry (resources)
+  partner: null
+  partner_match: register
+  type: register
+  direction: partner-built
+  channel: standard-directory
+  relationship: standard-participant
+  evidence: https://registry.identifiers.org/registry
+  match:
+    method: domain
+    domain: uniprot.org
+    seen_as:
+    - institution homeUrl
+    - resolution urlPattern
+    - resource home
+    registered_as:
+    - UniProt Consortium
+  life_sciences:
+    register: idorg
+    listings:
+    - prefix: taxonomy
+      mir: MIR:00100019
+      resource: Taxonomy through UniProt PURL
+      official: false
+    - prefix: uniparc
+      mir: MIR:00100476
+      resource: UniParc through UniProt
+      official: false
+    - prefix: uniprot.isoform
+      mir: MIR:00100502
+      resource: UniProt Isoform through Universal Protein Resource
+      official: false
+    - prefix: uniprot.isoform
+      mir: MIR:00100503
+      resource: UniProt Isoform through Universal Protein Resource using Persistent URL system
+      official: false
+    - prefix: uniprot.isoform
+      mir: MIR:00100504
+      resource: UniProt Isoform through UniParc
+      official: false
+    - prefix: uniprot.chain
+      mir: MIR:00000728
+      resource: UniProt Chain through Universal Protein Resource
+      official: true
+    - prefix: uniref
+      mir: MIR:00000877
+      resource: UniProt Consortium
+      official: true
+    - prefix: uniprot
+      mir: MIR:00100164
+      resource: Universal Protein Resource using Persistent URL system
+      official: true
+    listings_total: 8
+    signals:
+    - taxonomy
+    - uniparc
+    - uniprot
+    - uniprot.chain
+    - uniprot.isoform
+    - uniref
+  contract_reference:
+    register: identifiers.org registry (resources)
+    spec_file: null
+    role: identifiers-resource
+    registered_name: UniProt Consortium
+    register_id: UniProt Consortium
+    matched_domain: uniprot.org
+    detected_by: sweep-life-sciences.py
+    detected: '2026-10-15'
+  detected_by: sweep-life-sciences.py
+  first_seen: '2026-10-15'
+generated: '2026-10-15'
+method: searched
+source:
+- https://bio.tools/api/tool/?format=json&toolType=%22Web%20API%22&page=1
+- https://registry.api.identifiers.org/resolutionApi/getResolverDataset
+- https://registry.ga4gh.org/v1/implementations
+- https://registry.ga4gh.org/v1/services
+checked:
+- https://bio.tools/api/tool/?format=json&toolType=%22Web%20API%22&page=1
+- https://registry.api.identifiers.org/resolutionApi/getResolverDataset
+- https://registry.ga4gh.org/v1/implementations
+- https://registry.ga4gh.org/v1/services
