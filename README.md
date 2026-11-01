@@ -64,56 +64,114 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Universal protein database providing free, open access to protein sequences, functional annotations, cross-references, and taxonomic information via a REST API and SPARQL endpoint.
+UniProt is the world's leading high-quality, comprehensive, and freely accessible resource for protein sequence and functional annotation data. Maintained by the UniProt Consortium (EMBL-EBI, SIB, and PIR), it integrates information from experimental literature and computational analysis to provide a single authoritative source on protein function, taxonomy, sequences, cross-references, and disease associations. UniProt exposes a REST API at rest.uniprot.org for searching and retrieving entries from UniProtKB, UniRef, UniParc, Proteomes, and supporting services such as ID mapping. All data is freely available under Creative Commons Attribution 4.0.
 
-**Base URL:** https://rest.uniprot.org  
-**Documentation:** https://www.uniprot.org/help/api  
-**License:** CC BY 4.0  
-**Authentication:** None required  
+**Areas:** Proteins · Bioinformatics · Genomics · Life Sciences · Open Data
 
-## APIs
+## UniProt on APIs.io
 
-| API | Base URL | Description |
-|-----|----------|-------------|
-| UniProtKB REST API | https://rest.uniprot.org/uniprotkb | Search and retrieve reviewed (Swiss-Prot) and unreviewed (TrEMBL) protein entries |
-| UniRef REST API | https://rest.uniprot.org/uniref | Access sequence cluster databases (UniRef100/90/50) |
-| UniParc REST API | https://rest.uniprot.org/uniparc | Non-redundant archive of all public protein sequences |
-| Proteomes REST API | https://rest.uniprot.org/proteomes | Complete protein sets from fully sequenced organisms |
-| ID Mapping REST API | https://rest.uniprot.org/idmapping | Map between UniProt accessions and 150+ external database IDs |
-| UniProt SPARQL | https://sparql.uniprot.org/sparql | SPARQL 1.1 endpoint over 232B+ RDF triples |
-| EBI Proteins REST API | https://www.ebi.ac.uk/proteins/api | Protein annotations plus large-scale variation and proteomics data |
+Everything profiled for UniProt is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/uniprot/](https://apis.io/providers/uniprot/)** — or go straight to one of the APIs or properties below.
 
-## Key Endpoints (UniProtKB)
+### APIs (7)
 
-```
-GET /uniprotkb/search?query={query}&format={format}&size={size}
-GET /uniprotkb/{accession}
-GET /uniprotkb/{accession}.fasta
-GET /uniprotkb/{accession}/publications
-GET /uniprotkb/stream?query={query}&format={format}
-```
+- [UniProtKB REST API](https://apis.io/apis/uniprot/uniprotkb-rest-api/) — Search and retrieve protein entries from UniProtKB, which integrates Swiss-Prot (manually reviewed) and TrEMBL (computationally annotated) databases.…
+- [UniRef REST API](https://apis.io/apis/uniprot/uniref-rest-api/) — UniRef (UniProt Reference Clusters) groups similar sequences to reduce redundancy. UniRef100 combines identical sequences; UniRef90 clusters sequences…
+- [UniParc REST API](https://apis.io/apis/uniprot/uniparc-rest-api/) — UniParc (UniProt Archive) is a comprehensive non-redundant database of publicly available protein sequences. Each unique sequence appears once with a stable…
+- [Proteomes REST API](https://apis.io/apis/uniprot/proteomes-rest-api/) — Provides access to UniProt proteomes — the complete or near-complete sets of proteins from fully sequenced organisms. Supports retrieval of reference…
+- [ID Mapping REST API](https://apis.io/apis/uniprot/id-mapping-rest-api/) — Maps identifiers between UniProt accessions and over 150 external database identifiers (e.g., RefSeq, Ensembl, PDB, ChEMBL, KEGG, OMIM). Asynchronous…
+- [UniProt SPARQL Endpoint](https://apis.io/apis/uniprot/uniprot-sparql-endpoint/) — A standards-compliant SPARQL 1.1 endpoint exposing the full UniProt knowledge graph as RDF. The current release contains approximately 232 billion triples…
+- [EBI Proteins REST API](https://apis.io/apis/uniprot/ebi-proteins-rest-api/) — The EMBL-EBI Proteins API provides integrated access to UniProt protein annotations alongside large-scale study data including variation data from 1000…
 
-## Formats Supported
+### Published properties
 
-`json`, `fasta`, `tsv`, `xlsx`, `xml`, `rdf`, `txt`, `list`, `gff`
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Rate Limits
+#### JSON-LD (1)
 
-- **UniProt REST API:** No hard published limit; use pagination/streaming for bulk access
-- **EBI Proteins API:** 200 requests/second/user
-- **SPARQL endpoint:** 45-minute query timeout
+Linked-data contexts for the provider's vocabulary.
 
-## Pricing
+- [Apis Context](https://apis.io/jsonld/uniprot/apis/)
 
-Free. No API key required. No registration required.
+#### Security (1)
 
-## License
+Authentication, trust centre, and vulnerability disclosure.
 
-All UniProt data is available under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
+- [Uniprot Domain Security](https://apis.io/security/uniprot/uniprot-domain-security/)
 
-## Consortium
+#### Plans and pricing (1)
 
-UniProt is maintained by:
-- [EMBL-EBI](https://www.ebi.ac.uk/) — European Bioinformatics Institute
-- [SIB](https://www.sib.swiss/) — Swiss Institute of Bioinformatics
-- [PIR](https://proteininformationresource.org/) — Protein Information Resource
+Published plans, tiers and prices.
+
+- [Free](https://apis.io/plans/uniprot/free/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Default](https://apis.io/rate-limits/uniprot/default/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Overview](https://apis.io/finops/uniprot/overview/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://uniprot.org)
+- [Blog](https://www.uniprot.org/blog/)
+
+## API Evangelist rating
+
+**Kin Score 21.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 30.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 10.5 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/uniprot/](https://apis.io/providers/uniprot/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for UniProt: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/uniprot/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
